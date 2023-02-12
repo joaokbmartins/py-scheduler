@@ -1,0 +1,4 @@
+  501  docker ps
+  526  docker build -t scheduler-nginx .
+  517  docker run scheduler-nginx 
+  512  docker exec -it sharp_driscoll /bin/sh
