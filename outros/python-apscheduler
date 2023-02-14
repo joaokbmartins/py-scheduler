@@ -1,0 +1,26 @@
+triggers:
+  Interval: use when you want to run the job at fixed intervals of time
+  https://apscheduler.readthedocs.io/en/3.x/modules/triggers/interval.html#module-apscheduler.triggers.interval
+
+  cron: use when you want to run the job periodically at certain time(s) of day
+  https://apscheduler.readthedocs.io/en/3.x/modules/triggers/cron.html#module-apscheduler.triggers.cron
+  
+  date: use when you want to run the job just once at a certain point of time
+  https://apscheduler.readthedocs.io/en/3.x/modules/triggers/date.html#module-apscheduler.triggers.date
+
+job stores:
+  MemoryJobStore: If you always recreate your jobs at the start of your application, then you can probably go with the default
+  https://apscheduler.readthedocs.io/en/3.x/modules/jobstores/memory.html#apscheduler.jobstores.memory.MemoryJobStore
+
+executors:
+  ThreadPoolExecutor: The default should be good enough for most purposes.
+  https://apscheduler.readthedocs.io/en/3.x/modules/executors/pool.html#apscheduler.executors.pool.ThreadPoolExecutor
+
+schedulers:
+  BlockingScheduler: use when the scheduler is the only thing running in your process
+  https://apscheduler.readthedocs.io/en/3.x/modules/schedulers/background.html#apscheduler.schedulers.background.BackgroundScheduler
+
+  BackgroundScheduler: use when you're not using any of the frameworks below, and want the scheduler to run in the background inside your application
+  https://apscheduler.readthedocs.io/en/3.x/modules/schedulers/background.html#apscheduler.schedulers.background.BackgroundScheduler
+
+

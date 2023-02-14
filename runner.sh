@@ -1,0 +1,1 @@
+javac ./Teste.java && java Teste $1

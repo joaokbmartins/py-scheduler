@@ -1,1 +1,4 @@
 /outros
+/.git
+*.class
+/python
