@@ -12,7 +12,7 @@ RUN [ "rm", "-rf", "python-installer" ]
 WORKDIR "/scheduler/python"
 USER "root"
 RUN [ "./configure" ]
-RUN [ "make", "install" ]
+RUN [ ".make", "install" ]
 
 WORKDIR "/etc"
 RUN echo 'export PATH="$PATH:/scheduler/python"' >> profile

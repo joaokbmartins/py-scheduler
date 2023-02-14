@@ -1,0 +1,6 @@
+docker ps
+docker build -t scheduler-nginx .
+docker run scheduler-nginx 
+docker exec -it sharp_driscoll /bin/sh
+
+tar cvzf - Python-3.10.10/ | split --bytes=10MB - Python-3.10.10.tar.gz.parte-
